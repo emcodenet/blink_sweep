@@ -1,7 +1,12 @@
 from time import sleep
 import serial
+from termcolor import colored, cprint
+import random
+from random import randint
 
 ser = serial.Serial('/dev/ttyACM0', 9600)
+
+colors = ['grey','red','green','yellow','blue','magenta','cyan','white']
 
 while True:
 
@@ -13,4 +18,4 @@ while True:
 
 		if(d < 10):
 
-			print('Yoda says: Touch me not, you must.')
+			print ( colored ('Yoda says: Touch me not, you must.', colors[randint(0,7)] ) )
