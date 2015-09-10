@@ -2,7 +2,6 @@
  
 Servo myservo;
              
- 
 int pos = 0; 
 int led = 10;
 int distance = 0;
@@ -17,7 +16,6 @@ void setup()
   myservo.write(10);
 }
  
- 
 void loop()
 {
  
@@ -29,13 +27,10 @@ void loop()
  
   react(distance);
 
- 
- 
 }
 
 void react(int distance)
 {
- 
  
  if(distance < 10){
    
@@ -49,12 +44,7 @@ void react(int distance)
    
   }
 
-  //blink();
- 
- 
- 
 }
-
 
 void blink()
 {
